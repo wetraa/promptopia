@@ -14,7 +14,7 @@ const Profile = ({
         <span className="blue_gradient">{name} Profile</span>
       </h1>
       <p className="desc text-left">{desc}</p>
-      <div className="mt-16 prompt_layot flex flex-col gap-5">
+      <div className="mt-16 prompt_layout">
         {data.map((post) => (
           <PromptCard
             post={post}

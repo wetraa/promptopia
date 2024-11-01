@@ -18,7 +18,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
     }, 3000);
   };
   return (
-    <div className="prompt_card max-w-screen-sm">
+    <div className="prompt_card">
       <div className="flex justify-between items-start gap-5">
         <Link
           href={
