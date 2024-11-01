@@ -31,12 +31,11 @@ const ProfilePage = () => {
       "Are you sure you want to delete this prompt?"
     );
     if (hasConfirmedToDelete) {
-      const response = await fetch(`/api/prompt/${post._id}`, {
+      await fetch(`/api/prompt/${post._id}`, {
         method: "DELETE",
       });
-      const filteredPosts = posts.filter((p) => {
-        p._id !== post._id;
-      });
+      const filteredPosts = posts.filter((p) => p._id !== post._id);
+      console.log(filteredPosts);
       setPosts(filteredPosts);
     }
   };
