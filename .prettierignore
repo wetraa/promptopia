@@ -1,0 +1,10 @@
+node_modules
+dist/
+build/
+*.log
+coverage/
+.vscode/
+*.map
+.env
+.next/
+.cache/
